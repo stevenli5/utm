@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>UTM Generator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="utm.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>UTM Generator</h1>
+        </div>
+
+        <div class="input">
+            <form>
+                <!-- Insert URLs -->
+                <h2>URL</h2>
+                <p>Insert English and French URLs.</p>
+                <label for="eng">English:</label> <input type="text" id="eng" style="width: 80%;"> <br /> <br />
+                <label for="fra">French:</label> <input type="text" id="fra" style="width: 80%;">
+
+                <!-- Insert UTM properties -->
+                <h2>Input</h2>
+                <p>Dropdown selections take precedence.</p>
+                <label for="source"><b>utm_source:</b>&nbsp;</label> <input type="text" id="source" style="width: 50%;">
+                <br />
+                <select id="source2">
+                    <option value="">No source</option>
+                    <option value="cision">cision</option>
+                    <option value="linkedin">linkedin</option>
+                    <option value="osfi-bsif">osfi-bsif</option>
+                    <option value="twitter">twitter</option>
+                </select>
+                <br /> <br />
+                <label for="medium"><b>utm_medium:</b>&nbsp;</label> <input type="text" id="medium" style="width: 50%;">
+                <br />
+                <select id="medium2">
+                    <option value="">No medium</option>
+                    <option value="carousel">carousel</option>
+                    <option value="email">email</option>
+                    <option value="rss">rss</option>
+                </select>
+                <br /> <br />
+                <label for="campaign"><b>utm_campaign:</b>&nbsp;</label> <input type="text" id="campaign"
+                    style="width: 50%;">
+                <br />
+                <select id="campaign2">
+                    <option value="">No campaign</option>
+                    <option value="advisory">advisory</option>
+                    <option value="annualreport">annualreport</option>
+                    <option value="b20">b20</option>
+                    <option value="dsb">dsb</option>
+                    <option value="gsib">gsib</option>
+                    <option value="guidance">guidance</option>
+                    <option value="infopensions">infopensions</option>
+                    <option value="instructions">instructions</option>
+                    <option value="job">job</option>
+                    <option value="letter">letter</option>
+                    <option value="nr">nr</option>
+                    <option value="oca">oca</option>
+                    <option value="pillar">pillar</option>
+                    <option value="speech">speech</option>
+                </select>
+                <br /> <br />
+                <label for="term"><b>utm_term:</b>&nbsp;</label> <input type="text" id="term" style="width: 50%;">
+                <br />
+                <select id="term2">
+                    <option value="">No term</option>
+                </select>
+                <br /> <br />
+                <label for="content"><b>utm_content:</b>&nbsp;</label> <input type="text" id="content"
+                    style="width: 50%;"> <br />
+                <select id="content2">
+                    <option value="">No content</option>
+                    <option value="advisory">advisory</option>
+                    <option value="guideline">guideline</option>
+                    <option value="jobposting">jobposting</option>
+                    <option value="letter">letter</option>
+                    <option value="newsletter">newsletter</option>
+                    <option value="nr">nr</option>
+                    <option value="report">report</option>
+                    <option value="speech">speech</option>
+                </select>
+                <br /> <br />
+
+                <!-- Generate URLs -->
+                <input type="button" value="Generate URLs" onclick="generateURL(eng, fra)">
+            </form>
+        </div>
+        <div class="output">
+            <!-- Outputs -->
+            <h2>Output</h2>
+            <p>English URL:</p>
+            <textarea id="engLink" rows="4" style="width: 95%;"></textarea>
+            <p>French URL:</p>
+            <textarea id="fraLink" rows="4" style="width: 95%;"></textarea>
+        </div>
+    </div>
+
+    <!-- External JavaScript/JSON -->
+    <script type="text/javascript" src="utm.json"></script>
+    <script type="text/javascript" src="utm.js"></script>
+    
+</body>
+
+</html>

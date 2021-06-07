@@ -1,0 +1,7 @@
+{
+    "source": ["", "cision", "linkedin", "osfi-bsif", "twitter"],
+    "medium": ["", "carousel", "email", "rss"],
+    "campaign": ["", "advisory", "annualreport", "b20", "dsb", "gsib", "guidance", "infopensions", "instructions", "job", "letter", "nr", "oca", "pillar", "speech"],
+    "term": [""],
+    "content": ["", "advisory", "guideline", "jobposting", "letter", "newsletter", "nr", "report", "speech"]
+}

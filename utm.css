@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+    grid-column: span 12;
+}
+
+.input {
+    grid-column: span 5;
+}
+
+.output {
+    grid-column: span 7;
+}
+
+@media screen and (max-width: 1200px) {
+    .input {
+        grid-column: span 12;
+    }
+    
+    .output {
+        grid-column: span 12;
+    }
+}
